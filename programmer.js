@@ -1,3 +1,4 @@
+// creating the class Programmer that contains: name, position, age, language and a function to print Programmer data.
 class Programmer {
     constructor(name, position, age, language) {
       this.name = name;
@@ -5,8 +6,8 @@ class Programmer {
       this.age = age;
       this.language = language;
     }
-
-    printProg(){
+    // function to print Programmers name, position, age and favorite programming language.
+    printProg(){ 
         console.log(`
             -------------   
             Name: ${this.name} 
@@ -18,5 +19,5 @@ class Programmer {
     }   
   }
   
-  // exporting Programmer constructor
+  // exporting Programmer constructor so that another js file can read it.
   module.exports = Programmer;
